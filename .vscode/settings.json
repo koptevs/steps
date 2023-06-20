@@ -1,0 +1,83 @@
+{
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Users\\Igor\\AppData\\Local\\Programs\\Git\\bin\\bash.exe"
+    },
+  },
+  "terminal.integrated.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.lineHeight": 1.2,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.cursorBlinking": true,
+  "editor.fontFamily": "'iA Writer Duo S', Consolas, 'Fira Code Retina','Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.minimap.enabled": false,
+  "workbench.tree.indent": 20,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.editor.untitled.hint": "hidden",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.requireConfig": true,
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  "indentRainbow.colors": [
+    "rgba(255,255,64,0.3)",
+    "rgba(127,255,127,0.3)",
+    "rgba(255,127,255,0.3)",
+    "rgba(79,236,236,0.3)"
+  ],
+  "indentRainbow.ignoreErrorLanguages": [
+    "markdown"
+  ],
+  "editor.lineHeight": 1.9,
+  "editor.tabCompletion": "on",
+  "prettier.tabWidth": 4,
+  "material-ui-snippets.showNotesOnStartup": false,
+  "indentRainbow.excludedLanguages": [
+    "plaintext"
+  ],
+  "color-highlight.markerType": "dot-before",
+  "color-highlight.markRuler": false,
+  "color-highlight.languages": [
+    "*"
+  ],
+  "explorer.compactFolders": false,
+  "editor.fontWeight": "normal",
+  "workbench.iconTheme": "vscode-icons",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.indentSize": "tabSize",
+  "phpsab.executablePathCBF": "WordPress-Coding-Standards/vendor/squizlabs/php_codesniffer/bin/phpcbf",
+  "phpsab.executablePathCS": "WordPress-Coding-Standards/vendor/squizlabs/php_codesniffer/bin/phpcs",
+  "phpsab.autoRulesetSearch": false,
+  "phpsab.standard": "WordPress",
+  "phpsab.snifferArguments": [
+    "--ignore=*/wp-admin/*,*/wp-includes/*"
+  ]
+}
