@@ -1,0 +1,68 @@
+/*--------------------------------------------------------------
+# Top Bar
+--------------------------------------------------------------*/
+#topbar {
+	background-color: $color__bg-body;
+	padding: 10px 0;
+	font-size: 14px;
+}
+
+@include color-mode(dark) {
+	#topbar {
+		background-color: $color__bg-body--dark;
+	}
+}
+
+#topbar .contact-info i {
+	font-style: normal;
+	color: $theme-sup-warmer-600;
+}
+
+@include color-mode(dark) {
+	color: $theme-sup-warmer-300;
+}
+
+#topbar .contact-info i a,
+#topbar .contact-info i span {
+	padding-left: 5px;
+	color: $color__text-main;
+}
+
+@include color-mode(dark) {
+	#topbar .contact-info i a,
+	#topbar .contact-info i span {
+		color: $color__text-main--dark;
+	}
+}
+
+#topbar .contact-info i a {
+	line-height: 0;
+	transition: 0.3s;
+}
+
+#topbar .contact-info i a:hover {
+	color: $theme-sup-warmer-300;
+}
+
+#topbar .social-links a {
+	color: #65534c;
+	line-height: 0;
+	transition: 0.3s;
+	margin-left: 15px;
+	&:hover {
+		color: $theme-sup-warmer-300;
+	}
+}
+
+@include color-mode(dark) {
+	#topbar {
+		.social-links {
+			a {
+				color: $color__text-main--dark;
+				&:hover {
+					color: $theme-sup-warmer-300;
+				}
+			}
+		}
+	}
+}

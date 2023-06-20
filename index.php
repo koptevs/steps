@@ -32,8 +32,9 @@ $container = 'container';
 					?>
 					">
 						<h2 class="text-uppercase text-primary-900">
+
 						<?php
-							the_title();
+							the_title(); 
 						?>
 							</h2>
 					</a>

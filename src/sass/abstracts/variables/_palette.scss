@@ -1,0 +1,136 @@
+// Theme Palette 10
+
+// Primary
+$indigo-050: #e0e8f9;
+$indigo-100: #bed0f7;
+$indigo-200: #98aeeb;
+$indigo-300: #7b93db;
+$indigo-400: #647acb;
+$indigo-500: #4c63b6;
+$indigo-600: #4055a8;
+$indigo-700: #35469c;
+$indigo-800: #2d3a8c;
+$indigo-900: #19216c;
+
+// Neutrals
+$cool-grey-050: #f5f7fa;
+$cool-grey-100: #e4e7eb;
+$cool-grey-200: #cbd2d9;
+$cool-grey-300: #9aa5b1;
+$cool-grey-400: #7b8794;
+$cool-grey-500: #616e7c;
+$cool-grey-600: #52606d;
+$cool-grey-700: #3e4c59;
+$cool-grey-800: #323f4b;
+$cool-grey-900: #1f2933;
+
+// Supporting
+$light-blue-vivid-050: #e3f8ff;
+$light-blue-vivid-100: #b3ecff;
+$light-blue-vivid-200: #81defd;
+$light-blue-vivid-300: #5ed0fa;
+$light-blue-vivid-400: #40c3f7;
+$light-blue-vivid-500: #2bb0ed;
+$light-blue-vivid-600: #1992d4;
+$light-blue-vivid-700: #127fbf;
+$light-blue-vivid-800: #0b69a3;
+$light-blue-vivid-900: #035388;
+
+$red-vivid-050: #ffe3e3;
+$red-vivid-100: #ffbdbd;
+$red-vivid-200: #ff9b9b;
+$red-vivid-300: #f86a6a;
+$red-vivid-400: #ef4e4e;
+$red-vivid-500: #e12d39;
+$red-vivid-600: #cf1124;
+$red-vivid-700: #ab091e;
+$red-vivid-800: #8a041a;
+$red-vivid-900: #610316;
+
+$yellow-vivid-050: #fffbea;
+$yellow-vivid-100: #fff3c4;
+$yellow-vivid-200: #fce588;
+$yellow-vivid-300: #fadb5f;
+$yellow-vivid-400: #f7c948;
+$yellow-vivid-500: #f0b429;
+$yellow-vivid-600: #de911d;
+$yellow-vivid-700: #cb6e17;
+$yellow-vivid-800: #b44d12;
+$yellow-vivid-900: #8d2b0b;
+
+$teal-050: #effcf6;
+$teal-100: #c6f7e2;
+$teal-200: #8eedc7;
+$teal-300: #65d6ad;
+$teal-400: #3ebd93;
+$teal-500: #27ab83;
+$teal-600: #199473;
+$teal-700: #147d64;
+$teal-800: #0c6b58;
+$teal-900: #014d40;
+
+$theme-primary-050: $indigo-050;
+$theme-primary-100: $indigo-100;
+$theme-primary-200: $indigo-200;
+$theme-primary-300: $indigo-300;
+$theme-primary-400: $indigo-400;
+$theme-primary-500: $indigo-500;
+$theme-primary-600: $indigo-600;
+$theme-primary-700: $indigo-700;
+$theme-primary-800: $indigo-800;
+$theme-primary-900: $indigo-900;
+
+$theme-neutral-050: $cool-grey-050;
+$theme-neutral-100: $cool-grey-100;
+$theme-neutral-200: $cool-grey-200;
+$theme-neutral-300: $cool-grey-300;
+$theme-neutral-400: $cool-grey-400;
+$theme-neutral-500: $cool-grey-500;
+$theme-neutral-600: $cool-grey-600;
+$theme-neutral-700: $cool-grey-700;
+$theme-neutral-800: $cool-grey-800;
+$theme-neutral-900: $cool-grey-900;
+
+$theme-sup-warmer-050: $red-vivid-050;
+$theme-sup-warmer-100: $red-vivid-100;
+$theme-sup-warmer-200: $red-vivid-200;
+$theme-sup-warmer-300: $red-vivid-300;
+$theme-sup-warmer-400: $red-vivid-400;
+$theme-sup-warmer-500: $red-vivid-500;
+$theme-sup-warmer-600: $red-vivid-600;
+$theme-sup-warmer-700: $red-vivid-700;
+$theme-sup-warmer-800: $red-vivid-800;
+$theme-sup-warmer-900: $red-vivid-900;
+
+$theme-sup-warm-050: $yellow-vivid-050;
+$theme-sup-warm-100: $yellow-vivid-100;
+$theme-sup-warm-200: $yellow-vivid-200;
+$theme-sup-warm-300: $yellow-vivid-300;
+$theme-sup-warm-400: $yellow-vivid-400;
+$theme-sup-warm-500: $yellow-vivid-500;
+$theme-sup-warm-600: $yellow-vivid-600;
+$theme-sup-warm-700: $yellow-vivid-700;
+$theme-sup-warm-800: $yellow-vivid-800;
+$theme-sup-warm-900: $yellow-vivid-900;
+
+$theme-sup-cooler-050: $light-blue-vivid-050;
+$theme-sup-cooler-100: $light-blue-vivid-100;
+$theme-sup-cooler-200: $light-blue-vivid-200;
+$theme-sup-cooler-300: $light-blue-vivid-300;
+$theme-sup-cooler-400: $light-blue-vivid-400;
+$theme-sup-cooler-500: $light-blue-vivid-500;
+$theme-sup-cooler-600: $light-blue-vivid-600;
+$theme-sup-cooler-700: $light-blue-vivid-700;
+$theme-sup-cooler-800: $light-blue-vivid-800;
+$theme-sup-cooler-900: $light-blue-vivid-900;
+
+$theme-sup-cool-050: $teal-050;
+$theme-sup-cool-100: $teal-100;
+$theme-sup-cool-200: $teal-200;
+$theme-sup-cool-300: $teal-300;
+$theme-sup-cool-400: $teal-400;
+$theme-sup-cool-500: $teal-500;
+$theme-sup-cool-600: $teal-600;
+$theme-sup-cool-700: $teal-700;
+$theme-sup-cool-800: $teal-800;
+$theme-sup-cool-900: $teal-900;
