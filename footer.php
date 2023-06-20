@@ -1,14 +1,8 @@
 <?php
-// wp_die(__DIR__);
-require(__DIR__ .'/theme.php');
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-// $container = get_theme_mod( 'understrap_container_type' );
-?>
 
-<?php
-// get_template_part( 'sidebar-templates/sidebar', 'footerfull' );
+require(__DIR__ .'/theme.php');
 ?>
 
 <div class="wrapper footer-wrapper" id="wrapper-footer">
@@ -24,22 +18,16 @@ defined( 'ABSPATH' ) || exit;
 		<div class="row">
 			<div class="col-12 col-md-4 ">
 				<h3 class="text-center text-uppercase">Col 1</h3>
-
 			</div>
 
 			<div class="col-12 col-md-4 ">
 				<h3 class="text-center text-uppercase">Col 2</h3>
-
 			</div>
 			<div class="col-12 col-md-4">
 				<h3 class="text-center text-uppercase">Col 3</h3>
-
 			</div>
-
 		</div><!-- row end -->
-
 	</div><!-- container end -->
-
 </div><!-- wrapper end -->
 
 </div><!-- #page we need this extra closing tag here -->
