@@ -1,16 +1,16 @@
 <?php
-
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 
+require(__DIR__ .'/theme.php');
+
 get_header();
 
-$container = 'container';
 ?>
 
 <div class="wrapper" id="index-wrapper" class="bg-dark">
 
-	<div class=" <?php echo $container; ?> " id="content" tabindex="-1">
+	<div class=" <?php echo $theme_container; ?> " id="content" tabindex="-1">
 
 		<div class="row">
 
@@ -31,6 +31,7 @@ $container = 'container';
 					the_permalink();
 					?>
 					">
+						<!-- <h2 class="text-uppercase text-primary-900"> -->
 						<h2 class="text-uppercase text-primary-900">
 
 						<?php
@@ -38,7 +39,7 @@ $container = 'container';
 						?>
 							</h2>
 					</a>
-					<div class="py-1 px-3 mb-2 bg-primary-900 d-inline-block text-white">
+					<div class="py-3 px-3 mb-2 bg-primary-900 d-inline-block">
 						Posted by: 
 						<?php
 						the_author_posts_link();
