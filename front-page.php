@@ -14,7 +14,7 @@ get_header();
 	<div class="wrapper" id="index-wrapper">
 
 
-		<main class="site-main" id="main">
+		<main class="site-main" id="main ">
 
 			<section class="d-flex align-items-center justify-content-center" 
 				style="height: 200px; background-color: #ffca68; color: #000000;">
@@ -34,6 +34,6 @@ get_header();
 		</main><!-- #main -->
 
 	</div><!-- #index-wrapper -->
-
+?>
 <?php
 get_footer();

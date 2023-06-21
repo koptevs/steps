@@ -18,3 +18,9 @@ textarea {
 	font-size: 1rem;
 	line-height: $font__line-height-body;
 }
+
+@include color-mode(dark) {
+	body {
+		color: $color__text-main--dark;
+	}
+}

@@ -17,14 +17,27 @@ require(__DIR__ .'/theme.php');
 <!--<body -->
 <body <?php body_class(); ?> >
 	
-<!-- <?php get_template_part( 'global-templates/top-bar' ); ?> -->
-
-
 	<!-- ======= Header ======= -->
-	<header id="header" class="d-flex align-items-center">
-		<a class="skip-link sr-only sr-only-focusable" href="#content">
+	<!-- <header id="header" class="d-flex align-items-center">-->
+
+	<?php	if ( is_front_page() ) : ?>
+		<header id="wrapper-navbar" class="<?php echo $theme_navbar_fixed ? 'fixed-top' : ''; ?>">
+	<?php else : ?>
+		<header id="wrapper-navbar" class="<?php echo $theme_navbar_fixed ? 'fixed-top header-inner' : 'header-inner'; ?>">
+	<?php endif; ?>
+
+
+		
+	<a class="skip-link sr-only sr-only-focusable" href="#main">
 			<?php esc_html_e( 'Skip to content', 'steps' ); ?>
-		</a>
+	</a>
+	
+	<?php
+			get_template_part( 'global-templates/navbar', $theme_navbar_type );
+	?>
+
+		<?php 
+		/*
 		<div class="<?php echo $theme_container ?> d-flex justify-content-between">
 			<div class="logo">
 			<h1 class="text-light"><a href="/">SKRIEMELIS</a></h1>
@@ -50,4 +63,5 @@ require(__DIR__ .'/theme.php');
 
 
 		</div>
+		*/ ?>
 	</header><!-- End Header -->
