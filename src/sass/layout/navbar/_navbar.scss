@@ -16,6 +16,11 @@
 	padding: 7px 0;
 	background-color: $navbar-background-color-theme;
 }
+@include media-breakpoint-down(md) {
+	#wrapper-navbar {
+		padding: 2px 0;
+	}
+}
 
 #wrapper-navbar.header-scrolled,
 #wrapper-navbar.header-inner,

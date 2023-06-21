@@ -17,7 +17,7 @@ if ( is_front_page() ) {
 		<main class="site-main" id="main ">
 
 			<section class="d-flex align-items-center justify-content-center" 
-				style="height: 200px; background-color: #ffca68; color: #000000;">
+				style="height: 200px; background-color: #ffca77; color: #000000;">
 				<p class="fw-bold fs-1 ">SECTION1</p>
 			</section>
 
