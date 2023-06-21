@@ -6,9 +6,9 @@ require(__DIR__ .'/theme.php');
 
 get_header();
 
-// if ( is_front_page() ) {
-// 	get_template_part( 'global-templates/hero' );
-// }
+if ( is_front_page() ) {
+	get_template_part( 'global-templates/hero' );
+}
 ?>
 
 	<div class="wrapper" id="index-wrapper">

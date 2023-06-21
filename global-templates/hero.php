@@ -19,7 +19,7 @@ $container = 'container';
 		<div class="row">
 			<div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
 				<h1>Better Solutions For Your Business</h1>
-				<h2>We are team of talented designers making websites with Bootstrap!</h2>
+				<h2>We are team of professionals!</h2>
 				<div class="d-flex justify-content-center justify-content-lg-start">
 					<a href="#about" class="btn-get-started scrollto">Get Started</a>
 					<a href="https://youtu.be/6WFUv7-dmhE" class="glightbox btn-watch-video">
@@ -32,10 +32,11 @@ $container = 'container';
 						<span>Watch Video</span></a>
 				</div> <!-- .col -->
 			</div> <!-- .row -->
+			<!-- <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200"> -->
 			<div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
 <!--				<img src="--><?php // echo get_template_directory_uri() . '/img/hero-img.png' ?><!--" class="img-fluid animated" alt="Hero image">-->
 				<img src="<?php echo get_theme_file_uri( '/img/hero-img.png' ); ?> "class="img-fluid animated" alt="Hero image">
-
+				
 			</div>
 		</div>
 	</div>
