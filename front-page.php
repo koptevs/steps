@@ -34,6 +34,5 @@ if ( is_front_page() ) {
 		</main><!-- #main -->
 
 	</div><!-- #index-wrapper -->
-?>
 <?php
 get_footer();

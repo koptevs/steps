@@ -36,6 +36,24 @@ require(__DIR__ .'/theme.php');
 			get_template_part( 'global-templates/navbar', $theme_navbar_type );
 	?>
 
+<?php 
+		// if ( ! $theme_navbar_fixed ) :
+			?>
+			<!-- <div style="margin-top: -72px;"></div> -->
+			<?php
+		// endif;
+		?>
+
+		<?php
+		// if ( ! is_front_page() ) :
+			?>
+			<!-- <div style="margin-top: 72px;"></div> -->
+			<?php
+		// endif;
+		?>
+
+
+
 		<?php 
 		/*
 		<div class="<?php echo $theme_container ?> d-flex justify-content-between">
