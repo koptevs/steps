@@ -70,11 +70,11 @@
 // scss-docs-end import-stack
 
 // 8. Add additional custom code here
+@import './vendors';
+@import '../../node_modules/font-awesome/scss/font-awesome'; // <-------- Font Awesome Icon font
 @import './base';
 @import './components';
 @import './layout';
-@import './vendors';
-@import '../../node_modules/font-awesome/scss/font-awesome'; // <-------- Font Awesome Icon font
 
 // ---------- Understrap config-----------
 //@import "theme/theme_variables";  // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or Understrap variables here
