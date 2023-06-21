@@ -2,13 +2,10 @@
 # base -> elements -> body
 --------------------------------------------------------------*/
 body {
-	font-family: $font__main;
-	color: $color__text-main;
 	background-color: $color__bg-body;
 }
 @include color-mode(dark) {
 	body {
-		color: $color__text-main--dark;
 		background-color: $color__bg-body--dark;
 	}
 }
