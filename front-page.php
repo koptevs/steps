@@ -1,13 +1,14 @@
 <?php
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-
-require(__DIR__ .'/theme.php');
+require get_template_directory() . '/theme.php';
 
 get_header();
 
 if ( is_front_page() ) {
 	get_template_part( 'global-templates/hero' );
+	// get_template_part( 'global-templates/form-test' );
+	// get_template_part( 'global-templates/icons-test' );
 }
 ?>
 
@@ -16,7 +17,11 @@ if ( is_front_page() ) {
 
 		<main class="site-main" id="main ">
 
-			<section class="d-flex align-items-center justify-content-center" 
+		<?php get_template_part( 'global-templates/section-clients' ); ?>
+			<?php get_template_part( 'global-templates/section-about-us' ); ?>
+			<?php get_template_part( 'global-templates/section-why-us' ); ?>
+
+			<!-- <section class="d-flex align-items-center justify-content-center" 
 				style="height: 200px; background-color: #ffca77; color: #000000;">
 				<p class="fw-bold fs-1 ">SECTION1</p>
 			</section>
@@ -29,7 +34,7 @@ if ( is_front_page() ) {
 			<section class="d-flex align-items-center justify-content-center"
 				style="height: 200px; background-color: #bc4c4c; color: #ffffff;">
 				<p class="fw-bold fs-1">SECTION</p>
-			</section>
+			</section> -->
 
 		</main><!-- #main -->
 

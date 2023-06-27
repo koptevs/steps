@@ -7,15 +7,16 @@
 
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
+require get_template_directory() . '/theme.php';
 
-$container = 'container';
+
 // $container = get_theme_mod( 'ikunderstrap_container_type' );
 
 ?>
 
 <section id="hero" class="d-flex align-items-center">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="<?php echo $theme_container; ?>">
 		<div class="row">
 			<div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1">
 				<h1>Better Solutions For Your Business</h1>

@@ -1,7 +1,7 @@
 <?php
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-require(__DIR__ .'../../theme.php');
+require(get_template_directory() .'/theme.php');
 ?>
 
 <nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
@@ -11,7 +11,7 @@ require(__DIR__ .'../../theme.php');
     </h2>
 
 
-    <div class="<?php echo esc_attr( $theme_container ); ?>">
+    <div class="<?php echo esc_attr( $theme_container );?>">
 
         <!-- Your site title as branding in the menu -->
 		<?php if ( ! has_custom_logo() ) { ?>
@@ -32,6 +32,11 @@ require(__DIR__ .'../../theme.php');
 			the_custom_logo();
 		}
 		?>
+
+
+
+
+
         <!-- end custom logo -->
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavOffcanvas"
                 aria-controls="navbarNavOffcanvas" aria-expanded="false"
@@ -46,6 +51,7 @@ require(__DIR__ .'../../theme.php');
                         aria-label="Close"></button>
                        
             </div><!-- .offcancas-header -->
+            
 
             <!-- The WordPress Menu goes here -->
 			<?php

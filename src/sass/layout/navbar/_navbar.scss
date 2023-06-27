@@ -16,6 +16,13 @@
 	padding: 7px 0;
 	background-color: $navbar-background-color-theme;
 }
+
+@include color-mode(dark) {
+	#wrapper-navbar {
+		background-color: $color__bg-body--dark;
+	}
+}
+
 @include media-breakpoint-down(md) {
 	#wrapper-navbar {
 		padding: 2px 0;
@@ -112,7 +119,14 @@
 .offcanvas {
 	background-color: $navbar-background-color-theme;
 }
-
+.color-mode-icons-color {
+	color: white !important;
+}
+@include color-mode(dark) {
+	.color-mode-icons-color {
+		color: whitesmoke !important;
+	}
+}
 //
 //.navbar-toggler-icon {
 //  transition: all 0.5s ease;

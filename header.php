@@ -1,14 +1,14 @@
 <?php
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
-require(__DIR__ .'/theme.php');
+require(get_template_directory() .'/theme.php');
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> data-bs-theme="light" >
 
 <head>
 	<meta charset=" <?php bloginfo( 'charset' ); ?>	">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-f=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	
 	<?php wp_head(); ?>
@@ -16,7 +16,9 @@ require(__DIR__ .'/theme.php');
 
 <!--<body -->
 <body <?php body_class(); ?> >
-	
+<?php 
+// get_template_part( 'global-templates/top-bar' ); 
+?>
 	<!-- ======= Header ======= -->
 	<!-- <header id="header" class="d-flex align-items-center">-->
 

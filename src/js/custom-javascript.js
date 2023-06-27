@@ -6,10 +6,10 @@
  * License: https://bootstrapmade.com/license/
  */
 
-import GLightbox from "glightbox";
+import GLightbox from 'glightbox';
 
 (function () {
-	"use strict";
+	'use strict';
 
 	/**
 	 * Easy selector helper function
@@ -41,90 +41,90 @@ import GLightbox from "glightbox";
 	 * Easy on scroll event listener
 	 */
 	const onscroll = (el, listener) => {
-		el.addEventListener("scroll", listener);
+		el.addEventListener('scroll', listener);
 	};
 
 	/**
 	 * Toggle .header-scrolled class to #header when page is scrolled
 	 */
-	let selectHeader = select("#wrapper-navbar");
+	let selectHeader = select('#wrapper-navbar');
 	if (selectHeader) {
 		const headerScrolled = () => {
 			if (window.scrollY > 100) {
-				selectHeader.classList.add("header-scrolled");
+				selectHeader.classList.add('header-scrolled');
 			} else {
-				selectHeader.classList.remove("header-scrolled");
+				selectHeader.classList.remove('header-scrolled');
 			}
 		};
-		window.addEventListener("load", headerScrolled);
+		window.addEventListener('load', headerScrolled);
 		onscroll(document, headerScrolled);
 	}
 
 	/**
 	 * Back to top button
 	 */
-	let backtotop = select(".back-to-top");
+	let backtotop = select('.back-to-top');
 	if (backtotop) {
 		const toggleBacktotop = () => {
 			if (window.scrollY > 100) {
-				backtotop.classList.add("active");
+				backtotop.classList.add('active');
 			} else {
-				backtotop.classList.remove("active");
+				backtotop.classList.remove('active');
 			}
 		};
-		window.addEventListener("load", toggleBacktotop);
+		window.addEventListener('load', toggleBacktotop);
 		onscroll(document, toggleBacktotop);
 	}
 
 	/**
 	 * Header fixed top on scroll
 	 */
-	let selectHeaderF = select("#header");
+	let selectHeaderF = select('#header');
 	if (selectHeaderF) {
 		let headerOffset = selectHeaderF.offsetTop;
 		let nextElement = selectHeaderF.nextElementSibling;
 		const headerFixed = () => {
 			if (headerOffset - window.scrollY <= 0) {
-				selectHeaderF.classList.add("fixed-top");
-				nextElement.classList.add("scrolled-offset");
+				selectHeaderF.classList.add('fixed-top');
+				nextElement.classList.add('scrolled-offset');
 			} else {
-				selectHeaderF.classList.remove("fixed-top");
-				nextElement.classList.remove("scrolled-offset");
+				selectHeaderF.classList.remove('fixed-top');
+				nextElement.classList.remove('scrolled-offset');
 			}
 		};
-		window.addEventListener("load", headerFixed);
+		window.addEventListener('load', headerFixed);
 		onscroll(document, headerFixed);
 	}
 
 	/**
 	 * Mobile nav toggle
 	 */
-	on("click", ".mobile-nav-toggle", function (e) {
-		select("#navbar").classList.toggle("navbar-mobile");
-		this.classList.toggle("bi-list");
-		this.classList.toggle("bi-x");
+	on('click', '.mobile-nav-toggle', function (e) {
+		select('#navbar').classList.toggle('navbar-mobile');
+		this.classList.toggle('bi-list');
+		this.classList.toggle('bi-x');
 	});
 
 	/**
 	 * Mobile nav dropdowns activate
 	 */
 	on(
-		"click",
-		".navbar .dropdown > a",
+		'click',
+		'.navbar .dropdown > a',
 		function (e) {
-			if (select("#navbar").classList.contains("navbar-mobile")) {
+			if (select('#navbar').classList.contains('navbar-mobile')) {
 				e.preventDefault();
-				this.nextElementSibling.classList.toggle("dropdown-active");
+				this.nextElementSibling.classList.toggle('dropdown-active');
 			}
 		},
-		true
+		true,
 	);
 
 	/**
 	 * Initiate  glightbox
 	 */
 	const glightbox = GLightbox({
-		selector: ".glightbox",
+		selector: '.glightbox',
 	});
 })();
 
@@ -135,56 +135,56 @@ import GLightbox from "glightbox";
  */
 
 (() => {
-	"use strict";
+	'use strict';
 
-	const storedTheme = localStorage.getItem("theme");
+	const storedTheme = localStorage.getItem('theme');
 
 	const getPreferredTheme = () => {
 		if (storedTheme) {
 			return storedTheme;
 		}
 
-		return window.matchMedia("(prefers-color-scheme: dark)").matches
-			? "dark"
-			: "light";
+		return window.matchMedia('(prefers-color-scheme: dark)').matches
+			? 'dark'
+			: 'light';
 	};
 
 	const setTheme = function (theme) {
 		if (
-			theme === "auto" &&
-			window.matchMedia("(prefers-color-scheme: dark)").matches
+			theme === 'auto' &&
+			window.matchMedia('(prefers-color-scheme: dark)').matches
 		) {
-			document.documentElement.setAttribute("data-bs-theme", "dark");
+			document.documentElement.setAttribute('data-bs-theme', 'dark');
 		} else {
-			document.documentElement.setAttribute("data-bs-theme", theme);
+			document.documentElement.setAttribute('data-bs-theme', theme);
 		}
 	};
 
 	setTheme(getPreferredTheme());
 
 	const showActiveTheme = (theme, focus = false) => {
-		const themeSwitcher = document.querySelector("#bd-theme");
+		const themeSwitcher = document.querySelector('#bd-theme');
 		if (!themeSwitcher) {
 			return;
 		}
 
-		const themeSwitcherText = document.querySelector("#bd-theme-text");
+		const themeSwitcherText = document.querySelector('#bd-theme-text');
 		// const activeThemeIcon = document.querySelector(".theme-icon-active use");
 		const btnToActive = document.querySelector(
-			`[data-bs-theme-value="${theme}"]`
+			`[data-bs-theme-value="${theme}"]`,
 		);
 		// const svgOfActiveBtn = btnToActive.querySelector("svg use").getAttribute("href");
 
-		document.querySelectorAll("[data-bs-theme-value]").forEach((element) => {
-			element.classList.remove("active");
-			element.setAttribute("aria-pressed", "false");
+		document.querySelectorAll('[data-bs-theme-value]').forEach((element) => {
+			element.classList.remove('active');
+			element.setAttribute('aria-pressed', 'false');
 		});
 
-		btnToActive.classList.add("active");
-		btnToActive.setAttribute("aria-pressed", "true");
+		btnToActive.classList.add('active');
+		btnToActive.setAttribute('aria-pressed', 'true');
 		// activeThemeIcon.setAttribute("href", svgOfActiveBtn);
 		const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
-		themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+		themeSwitcher.setAttribute('aria-label', themeSwitcherLabel);
 
 		if (focus) {
 			themeSwitcher.focus();
@@ -192,20 +192,20 @@ import GLightbox from "glightbox";
 	};
 
 	window
-		.matchMedia("(prefers-color-scheme: dark)")
-		.addEventListener("change", () => {
-			if (storedTheme !== "light" || storedTheme !== "dark") {
+		.matchMedia('(prefers-color-scheme: dark)')
+		.addEventListener('change', () => {
+			if (storedTheme !== 'light' || storedTheme !== 'dark') {
 				setTheme(getPreferredTheme());
 			}
 		});
 
-	window.addEventListener("DOMContentLoaded", () => {
+	window.addEventListener('DOMContentLoaded', () => {
 		showActiveTheme(getPreferredTheme());
 
-		document.querySelectorAll("[data-bs-theme-value]").forEach((toggle) => {
-			toggle.addEventListener("click", () => {
-				const theme = toggle.getAttribute("data-bs-theme-value");
-				localStorage.setItem("theme", theme);
+		document.querySelectorAll('[data-bs-theme-value]').forEach((toggle) => {
+			toggle.addEventListener('click', () => {
+				const theme = toggle.getAttribute('data-bs-theme-value');
+				localStorage.setItem('theme', theme);
 				setTheme(theme);
 				showActiveTheme(theme, true);
 			});
